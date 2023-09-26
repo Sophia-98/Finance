@@ -4,3 +4,4 @@ Flask-Session
 gunicorn
 psycopg2
 requests
+pytz==2021.1

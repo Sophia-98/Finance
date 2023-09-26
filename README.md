@@ -1,2 +1,2 @@
 # Finance
-CS50 Finance deployment
+CS50 Finance online deployment

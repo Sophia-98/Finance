@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block title %}
+   Index
+{% endblock %}
+
+{% block main %}
+    <h2>Index</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th scope="col">Symbols</th>
+                    <th scope="col">Shares</th>
+                    <th scope="col">Price</th>
+                    <th scope="col">TOTAL</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for stock in stocks %}
+                    <tr>
+                        <td>{{ stock['symbol'] }}</td>
+                        <td>{{ stock['shares'] if stock['shares'] is not none else '' }}</td>
+                        <td>{{ usd(stock['price']) if stock['price'] is not none else '' }}</td>
+                        <td>{{ usd(stock['shares'] * stock['price']) if stock['shares'] is not none and stock['price'] is not none else '' }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <th>Cash remaining</th>
+                    <th>{{ cash | usd }}</th>
+                </tr>
+            </tfoot>
+        </table>
+{% endblock %}

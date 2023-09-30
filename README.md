@@ -1,2 +1,2 @@
 # Finance
-CS50 Finance online deployment
+Stock Exchange website using Real-time APIs. 

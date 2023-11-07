@@ -1,5 +1,7 @@
 # CS50 Finance Readme
 
+![](https://github.com/Sophia-98/Finance/blob/main/cs50-finance.gif?raw=true)
+
 - A web app created with Python and Flask as part of Harvard's CS50 course where users are able to 'buy' and 'sell' stocks and look up the pricing of stocks.
 - Handles user requests and uses IEX API for real-time data retrieval.
 - Incorporates user authentication and dynamic web page rendering using Jinja templating.

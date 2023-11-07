@@ -1,4 +1,4 @@
-# CS50 Finance Readme
+# CS50 Finance
 
 ![](https://github.com/Sophia-98/Finance/blob/main/cs50-finance.gif?raw=true)
 
